@@ -28,7 +28,6 @@ const Chat = ({ selectedUser, messages, sendMessage }) => {
                     </div>
                 ))}
             </div>
-
             <div className="chat-input">
                 <input
                     className="chat-input"

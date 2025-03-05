@@ -5,26 +5,22 @@
 }
 
 
+html{
+    overflow-y: hidden;
+}
+
+
 .sidebar {
     width: 300px;
-    background: #f4f4f4;
+    background: #ffffff;
     padding: 15px;
     border-right: 1px solid #ddd;
-    overflow-y: auto;
+    overflow-y: auto !important;
 }
 
 .message {
     display: flex;
     align-items: center;
-    margin: 10px 0;
-}
-
-.sent {
-    justify-content: flex-end;
-}
-
-.received {
-    justify-content: flex-start;
 }
 
 .message-avatar {
@@ -35,10 +31,14 @@
 }
 
 .search-bar {
-    width: 260px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    flex: 1;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #eee;
+    margin-right: 10px;
+    width: 250px;
 }
 
 .user {
@@ -52,7 +52,7 @@
 }
 
 .user:hover {
-    background: rgba(205, 255, 226, 0.96);
+    background: rgba(179, 179, 179, 0.96);
 }
 
 .avatar {
@@ -90,12 +90,14 @@
     display: flex;
     align-items: center;
     padding: 15px;
-    border-bottom: 1px solid #ddd;
+    color: white;
+    background-color: black;
+    border-radius: 5px 5px 5px 5px   ;
 }
 
 .chat-avatar {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -106,6 +108,7 @@
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
 }
 
 .message {
@@ -116,41 +119,51 @@
 }
 
 .sent {
-    background: #c3b4ff;
+    background: #7f5cff;
     align-self: flex-end;
+    width: 100px;
+    box-shadow: 4px 4px 8px rgba(34, 60, 80, 0.2);
+    height: 35px;
     color: white;
+    justify-content: center;
+    border-radius: 52px;
 }
 
 .received {
-    background: #b7f5b7;
+    background: #fff;
+    box-shadow: 4px 4px 8px rgba(34, 60, 80, 0.2);
     align-self: flex-start;
+    border-radius: 52px;
+    padding: 8px 12px;
+    height: 40px;
 }
 
 
 .chat-input {
     display: flex;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-    border-radius: 10px;
-    background: transparent;
-    font-family: "Prompt", sans-serif;
+    padding: 15px;
+    background: black;
+    align-items: center;
+    border-radius:5px 5px 5px 5px;
 }
 
 .chat-input input {
-    flex-grow: 1;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    flex: 1;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #eee;
+    margin-right: 10px;
 }
 
 .chat-input button {
-    background: #4caf50;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: #6A5ACD;
     color: white;
     border: none;
-    padding: 10px;
-    margin-left: 5px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 .chat-input button:hover {
